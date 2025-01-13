@@ -12,12 +12,12 @@ public class BitLogic {
         int e = a ^ b;
         int f = (~a & b) | (a & ~b);
         int g = ~a & 0x0f;
-        System.out.println("        a = " + binary[a]);
-        System.out.println("        b = " + binary[b]);
-        System.out.println("      a|b = " + binary[c]);
-        System.out.println("      a&b = " + binary[d]);
-        System.out.println("      a^b = " + binary[e]);
-        System.out.println("~a&b|a&~b = " + binary[f]);
-        System.out.println("       ~a = " + binary[g]);
+        System.out.println("        a = " + binary[a] + " = " + a);
+        System.out.println("        b = " + binary[b] + " = " + b);
+        System.out.println("      a|b = " + binary[c] + " = " + c);
+        System.out.println("      a&b = " + binary[d] + " = " + d);
+        System.out.println("      a^b = " + binary[e] + " = " + e);
+        System.out.println("~a&b|a&~b = " + binary[f] + " = " + f);
+        System.out.println("       ~a = " + binary[g] + " = " + g);
     }
 }
