@@ -1,26 +1,27 @@
-// Теперь volume() возвращает объем коробки.
-class Box4 {
+// В этой программе используется параметризованный метод.
+class Box5 {
     double width;
     double height;
     double depth;
-    // Отобразить объем коробки.
+    // Вычислить и возвратить объем.
     double volime() {
         return width * height * depth;
     }
+    // Установить размер коробки
+    void setDim(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
 }
-public class BoxDemo4 {
+public class BoxDemo5 {
     public static void main(String[] args) {
-        Box4 mybox1 = new Box4();
-        Box4 mybox2 = new Box4();
+        Box5 mybox1 = new Box5();
+        Box5 mybox2 = new Box5();
         double vol;
-        // Присвоить значения переменным экземпляра mybox1.
-        mybox1.width = 10;
-        mybox1.height = 20;
-        mybox1.depth = 15;
-        // Присвоить значения переменным экземпляра mybox2.
-        mybox2.width = 3;
-        mybox2.height = 6;
-        mybox2.depth = 9;
+        // Инициализируем размеры коробок.
+        mybox1.setDim(10, 20, 15);
+        mybox2.setDim(3, 6, 9);
         // Получить объем первой коробки.
         vol = mybox1.volime();
         System.out.println("Объем равен " + vol);
